@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Manage Contacts</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">ContactHub</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Dashboard</a></li>
+      <li><a href="groups.html">Groups</a></li>
+      <li><a href="contacts.html" class="active">Contacts</a></li>
+      <li><a href="details.html">Details</a></li>
+    </ul>
+  </div>
+</nav>
+
+  <h2>Contacts</h2>
+
+  <input type="text" id="contactName" placeholder="Name">
+  <input type="text" id="contactCompany" placeholder="Company (optional)">
+  <input type="text" id="contactPosition" placeholder="Position (optional)">
+  <select id="groupSelect"></select>
+  <button id="addContactBtn">Add Contact</button>
+
+  <table id="contactTable">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Details</th>
+      <th>Group</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody id="contactList">
+    </tbody>
+</table>
+
+  <div id="editModal" class="modal">
+  <div class="modal-content">
+    <span class="closeBtn">&times;</span>
+    <h3>Edit Item</h3>
+    <form id="editForm">
+      <div id="modalInputs">
+        <!-- Inputs will be injected dynamically -->
+      </div>
+      <button type="submit">Save</button>
+    </form>
+  </div>
+
+  <script src="js/contacts.js"></script>
+</body>
+</html>

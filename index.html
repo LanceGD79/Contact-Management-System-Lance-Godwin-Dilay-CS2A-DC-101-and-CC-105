@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact System</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">ContactHub</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Dashboard</a></li>
+      <li><a href="groups.html">Groups</a></li>
+      <li><a href="contacts.html" class="active">Contacts</a></li>
+      <li><a href="details.html">Details</a></li>
+    </ul>
+  </div>
+</nav>
+
+ <div class="dashboard-stats">
+  <div class="stat-card">
+    <h3>Contacts</h3>
+    <p id="totalContacts">--</p>
+  </div>
+  <div class="stat-card">
+    <h3>Groups</h3>
+    <p id="totalGroups">--</p>
+  </div>
+  <div class="stat-card">
+    <h3>Details</h3>
+    <p id="totalDetails">--</p>
+  </div>
+</div>
+
+<h2>Recently Added Contacts</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Company</th>
+      <th>Group</th>
+    </tr>
+  </thead>
+  <tbody id="recentContactList"></tbody>
+</table>
+
+<div style="text-align: right; margin-top: 10px;">
+  <a href="contacts.html" class="primary-btn" style="text-decoration: none;">View All Contacts →</a>
+</div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
