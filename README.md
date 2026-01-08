@@ -1,4 +1,4 @@
-## How to Run the Project
+## Run the Project
 1. Open the project in Visual Studio.
 2. Import the database in your mysql workbench: source contact_db.sql;
 3. Update the database connection in server.js
